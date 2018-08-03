@@ -1,3 +1,8 @@
+*{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
 .page-heading {
     position: relative;
     height: 90px;
@@ -31,12 +36,16 @@
 .nav-button{
     height: 16px;
     /* background-color: aqua; */
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    /* font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; */
     font-size: 16px;
     color: #777777;
     padding-right: 5px;
     padding-left: 5px;
 }
+.nav-button:hover{
+    color:#4aaaa5;
+}
+
 
 .left-right-borders{
     border-left-style: solid;
@@ -76,7 +85,8 @@ main{
     top: 20px;
     padding: 20px;
     margin-bottom: 60px;
-    background-color: white;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
 }
 
 #img-top-left {
@@ -86,6 +96,7 @@ main{
 }
 
 .main-heading {
+    /* font-family: 'Kirang Haerang', cursive; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     color: #4aaaa5;
@@ -99,25 +110,77 @@ main{
 }
 
 .main-text {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
+    /* font-family: 'Kirang Haerang', cursive; */
+    /* font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
 }
 
 body {
     position: relative;
 }
-footer {
-    position: absolute;
+.footer-text {
+    padding-top: 20px;
     width: 100%;
     text-align: center;
-    background-color: #777777;
+    background-color: #666666;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    color: white;
-    height: 40px;
+    color: lightgray;
+    height: 25px;
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    height: 150px;
+    columns: white;
+    margin: 2px;
+}
+
+.box-text{
+    position: relative;
+    top: 75%;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 4%;
+}
+
+#box1 {
+    background-image: url("https://picsum.photos/200/150/?image=1078");
+}
+
+#box2 {
+    background-image: url("https://picsum.photos/200/150/?image=967");
+}
+
+#box3 {
+    background-image: url("https://picsum.photos/200/150/?image=836");
+}
+
+#box4 {
+    background-image: url("https://picsum.photos/200/150/?image=657");
+}
+
+#box5 {
+    background-image: url("https://picsum.photos/200/150/?image=1074");
+}
+
+.input-box {
+    width: 100%;
+    margin: 1% 0% 2% 0%;
+    height: 20px;
+}
+
+.box-comment {
+    height: 100px;
 }
